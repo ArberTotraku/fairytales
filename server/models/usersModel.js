@@ -1,11 +1,11 @@
 import {Schema,model} from 'mongoose';
-import {fairyTaleSchema} from './fairyTaleModel.js'
+import {bookSchema} from './bookModel.js'
 
 const userSchema = new Schema( {
     name:String,
     email:String,
     // fairytales 
-    fairyTales_collection: [fairyTaleSchema]
+    books_collection: [bookSchema]
 })
 
 
